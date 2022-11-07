@@ -13,7 +13,13 @@ const AddProduct = () => {
       body: JSON.stringify(user),
     })
       .then((res) => res.json())
-      .then((data) => console.log(data));
+      .then((data) => {
+        if (data.insertedId) {
+          console.log(data);
+          event.target.reset();
+          alert('data submitted successfully')
+        }
+      });
   };
   const handleBlur = (event) => {
     const field = event.target.name;
