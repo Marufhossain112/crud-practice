@@ -7,7 +7,7 @@ export const router = createBrowserRouter([
     element: <AddProduct></AddProduct>,
   },
   {
-    path: "/manage",
+    path: "/informs",
     element: <ManageProduct></ManageProduct>,
     loader: () => fetch("http://localhost:5000/informs"),
   },
