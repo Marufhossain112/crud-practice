@@ -17,7 +17,7 @@ const AddProduct = () => {
         if (data.insertedId) {
           console.log(data);
           event.target.reset();
-          alert('data submitted successfully')
+          alert("data submitted successfully");
         }
       });
   };
